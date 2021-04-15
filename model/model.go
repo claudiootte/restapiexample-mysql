@@ -52,6 +52,7 @@ func CreateBook(w http.ResponseWriter, r *http.Request) {
 			json.NewEncoder(w).Encode(http.StatusBadRequest)
 
 		} else {
+			w.WriteHeader(http.StatusCreated)
 			json.NewEncoder(w).Encode(book)
 
 		}
