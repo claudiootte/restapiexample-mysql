@@ -101,3 +101,5 @@ func DeleteBook(w http.ResponseWriter, r *http.Request) {
 	}
 
 }
+
+// by Otte 05/02/20
